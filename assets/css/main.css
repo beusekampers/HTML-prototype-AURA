@@ -1,0 +1,409 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+    font-family: Proxima Nova;
+    src: url(../font/Proxima_Nova_Alt_Bold.ttf);
+}
+@media screen and (max-width: 667px){
+    .container{
+        min-height: 100vh;
+        padding: 0 36px 0 36px;
+        color: #FFFFFF;
+        box-sizing: border-box;
+        font-family: 'Proxima Nova';
+        background: #2657eb;
+        background: -moz-linear-gradient(top, #2657eb 0%, #de6162 100%);
+        background: -webkit-linear-gradient(top, #2657eb 0%,#de6162 100%);
+        background: linear-gradient(to bottom, #2657eb 0%,#de6162 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2657eb', endColorstr='#de6162',GradientType=0 );
+    }
+        
+        header .logo-head{
+            height: 55px;
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #FFFFFF;
+        }
+            header .logo-head h3{
+                margin: 0px;
+                padding-top: 6px;
+                text-align: center;
+                font-size: 30px;
+                font-weight: normal;
+            }
+        .wrapper.profile{ padding-top: 50px 100px 50px 100px;}
+            .wrapper.profile .title{ margin: 15px 0 15px 0;}
+                .wrapper.profile .title h3{
+                    font-size: 30px;
+                    margin:0px;
+                    text-align: center;
+                }
+            .wrapper .profile-slider{
+                padding: 25px 40px 25px 40px;
+                box-sizing: border-box;
+                height: 250px;
+                width: 100%;
+                background-color: rgba(255,255,255,0.5);
+                border-radius: 8px;
+                position: relative;
+            }
+                .wrapper .profile-slider .profile-img{
+                    height: 100%;
+                    background-position: center center;
+                    background-size: cover;
+                    border-radius: 8px;
+                }
+                .wrapper .profile-slider .slide-left{
+                    position: absolute;
+                    left: -15px;
+                    top: 90px;
+                }
+                .wrapper .profile-slider .slide-right{
+                    position: absolute;
+                    right: -15px;
+                    bottom: 85px;
+                }
+                    .wrapper .profile-slider i{ font-size: 70px;}
+                .wrapper.profile .rating span:first-child{
+                    margin-top: 10px;
+                    display: block;
+                    text-align: center;
+                }
+                .wrapper.profile .score h1{
+                    font-size: 70px;
+                    margin: 0;
+                    text-align: center;
+                }
+                    .wrapper.profile .score h1 .percentage{
+                        display: inline;
+                        font-size: 30px;
+                        margin-left: -15px;
+                    }
+                .wrapper.profile .like-btn{
+                    padding: 0 25px 0 25px;
+                    margin-top: 10px;
+                }
+                    .wrapper.profile .like-btn div{
+                        width: 90px;
+                        height: 90px;
+                        background-color: rgba(255,255,255,0.5);
+                        border-radius: 8px;
+                        display: inline-block;
+                        padding: 16px;
+                        box-sizing: border-box;
+                    }
+                        .wrapper.profile .like-btn i{font-size: 60px;}
+                            .wrapper.profile .like-btn .like i{
+                                background: -webkit-linear-gradient(#4bea85, #11998e);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            }
+                        .wrapper.profile .like-btn .dislike{float: right;}
+                            .wrapper.profile .like-btn .dislike i{
+                                background: -webkit-linear-gradient(#e34e49, #bd3035);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            }
+}
+
+@media screen and (max-width: 320px){
+    
+    .wrapper.profile .score h1{ font-size: 50px;}
+
+    .wrapper.profile .like-btn{ margin-top: 0px;}
+        .wrapper.profile .like-btn div{ 
+            width: 70px; 
+            height: 70px; 
+            padding: 11px;
+        }
+            .wrapper.profile .like-btn i{font-size: 50px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
