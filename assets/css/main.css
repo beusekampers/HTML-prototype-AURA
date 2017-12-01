@@ -201,6 +201,48 @@ textarea {
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
                             }
+        /*Overview page*/
+        .wrapper.overview .rated-p{
+            margin-top: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #FFFFFF;
+        }
+            .wrapper.overview .rated-p:last-child{
+                border-bottom: 0px;
+            }
+            .wrapper.overview .rated-p .image{
+                width: 20%;
+                max-width: 65px;
+                height: 65px;
+                background-size: cover;
+                background-position: center center;
+                border-radius: 100%;
+                float: left;
+            }
+            .wrapper.overview .rated-p .info{
+                width: 67%;
+                padding-left: 15px;
+                box-sizing: border-box;
+                float: left;
+            }
+                .wrapper.overview .rated-p .info h2{
+                    font-size: 20px;
+                    margin-top: -2px;
+                    margin-bottom: 0;
+                }
+                .wrapper.overview .rated-p .info h3{
+                    font-size: 15px;
+                    margin-top: 0px;
+                    margin-bottom: 0;
+                }
+                .wrapper.overview .rated-p .info span{ font-size: 12px;}
+                .wrapper.overview .rated-p .link-detail{ 
+                    float: left;
+                    width: 13%;
+                    height: 40px;
+                }
+                    .wrapper.overview .rated-p .link-detail i{font-size: 70px;}
+
 }
 
 @media screen and (max-width: 320px){
