@@ -256,6 +256,12 @@ textarea {
             padding: 11px;
         }
             .wrapper.profile .like-btn i{font-size: 50px;}
+    
+    /*Profile overview*/
+    .wrapper.overview .rated-p .image{
+        max-width: 50px;
+        max-height: 50px;
+    }
 }
 
 
